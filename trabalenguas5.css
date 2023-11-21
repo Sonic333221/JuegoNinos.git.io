@@ -1,0 +1,26 @@
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.center {
+    text-align: center;
+}
+
+/* Estilos específicos para el dinosaurio */
+.dinosaurio {
+    width: 200px;
+    height: auto;
+    cursor: pointer;
+}
+
+/* Estilos específicos para el trabalenguas */
+.trabalenguas {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 16px;
+    font-style: italic;
+    display: none;
+}

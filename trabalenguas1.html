@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trabalenguas</title>
+    <style>
+        /* Estilos generales */
+        body {
+            position: relative;
+            margin: 0;
+            background-image: url("InderBello2.jpeg");
+            background-size: 153%;
+            background-repeat: no-repeat;
+            background-position: right;
+            background-color: yellowgreen;
+            font-family: Arial, sans-serif;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .center {
+            text-align: center;
+        }
+
+        /* Estilos específicos para el trabalenguas */
+        .trabalenguas {
+            text-align: center;
+            margin-top: 20px;
+            font-style: italic;
+            display: none;
+        }
+
+        h3 {
+            color: #ff6b6b;
+            font-family: 'Comic Sans MS', cursive;
+            font-size: 36pt;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+        }
+
+        .button-container {
+            display: flex;
+            justify-content: space-around; /* Alinear los botones horizontalmente */
+            margin-top: 20px; /* Espacio entre los botones y el texto */
+        }
+
+        button {
+            height: 50px;
+            width: 100px;
+            text-align: center;
+            cursor: pointer;
+            background-color: #64b5f6;
+            border-radius: 10px;
+        }
+
+        .boton1 {
+            height: 40px;
+            width: 120px;
+            background-color: aqua;
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="button-container">
+        <button id="mostrarTrabalenguas">Haz clic aquí</button>
+        <a href="trabalenguas.html"><button class="boton1">Regresar</button></a>
+    </div>
+
+    <h3 id="linea1" class="trabalenguas" style="display: none;">1. Tres tristes tigres,</h3>
+    <h3 id="linea2" class="trabalenguas" style="display: none;">tragaban trigo en un trigal,</h3>
+    <h3 id="linea3" class="trabalenguas" style="display: none;">en tres tristes trastos,</h3>
+    <h3 id="linea4" class="trabalenguas" style="display: none;">tragaban trigo tres tristes tigres.</h3>
+
+    <script>
+        window.addEventListener('DOMContentLoaded', (event) => {
+            const mostrarTrabalenguasBtn = document.getElementById('mostrarTrabalenguas');
+            const lineasTrabalenguas = [
+                document.getElementById('linea1'),
+                document.getElementById('linea2'),
+                document.getElementById('linea3'),
+                document.getElementById('linea4')
+            ];
+
+            mostrarTrabalenguasBtn.addEventListener('click', () => {
+                lineasTrabalenguas.forEach(linea => {
+                    linea.style.display = 'block';
+                });
+            });
+        });
+    </script>
+</body>
+
+</html>

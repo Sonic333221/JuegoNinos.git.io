@@ -1,0 +1,48 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: yellowgreen;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  
+  .container {
+    background-color: white;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+  }
+  
+  input[type="text"] {
+    padding: 10px;
+    margin-top: 10px;
+    width: 100%;
+  }
+  
+  button {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    cursor: pointer;
+  }
+  
+  #result {
+    margin-top: 20px;
+    font-weight: bold;
+  }
+
+  .boton1{
+    position: relative;
+    margin: 0;
+    top: -8px;
+    height: 40px;
+    width: 120px;
+    background-color: aqua;
+    left: 10px;
+    cursor: pointer;
+}

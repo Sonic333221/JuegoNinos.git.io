@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Juegoteca</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            position: relative;
+            margin: 0;
+            background-image: url("InderBello1.jpeg");
+            background-size: 143%; /* Ajusta este valor para cambiar el tamaño de la imagen */
+            background-repeat: no-repeat;
+            background-position: right;
+            background-color: yellowgreen;
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .container {
+            background-color: #fff;
+            border-radius: 8px;
+            padding: 20px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+
+        .button-container {
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+            margin-top: 20px;
+            box-shadow: 10px;
+        }
+
+        .button-container button {
+            width: 200px;
+            height: 50px;
+            border: none;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(211, 42, 42, 0.1);
+            cursor: pointer;
+        }
+
+        .button-container button a {
+            text-decoration: none;
+            color: #333;
+            font-size: 18px;
+            display: block;
+            height: 100%;
+            width: 100%;
+            padding: 15px 0;
+        }
+
+        /* Estilos para el botón Sopa de letras */
+        .sopa-button {
+            background-color: #ffcc99; /* Color pastel para Sopa de letras */
+        }
+
+        /* Estilos para el botón Trabalenguas */
+        .trabalenguas-button {
+            background-color: #ffb3b3; /* Color pastel para Trabalenguas */
+        }
+
+        /* Estilos para el botón Adivinanzas */
+        .adivinanza-button {
+            background-color: #99ccff; /* Color pastel para Adivinanzas */
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Elige un juego:</h1>
+        <div class="button-container">
+            <button class="sopa-button"><a href="sopaletras.html">Sopa de letras</a></button>
+            <button class="trabalenguas-button"><a href="trabalenguas.html">Trabalenguas</a></button>
+            <button class="adivinanza-button"><a href="adivinanza.html">Adivinanzas</a></button>
+        </div>
+    </div>
+</body>
+</html>

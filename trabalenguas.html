@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Mi Página con Fondo de Pantalla</title>
+    <style>
+     body {
+    background-image: url("Trabalenguas.png");
+    background-size: 1365px 670px; /* Cambia el tamaño de la imagen al 80% del contenedor */
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center -17px; /* Mueve la imagen hacia arriba */
+}
+
+        /* Estilo para los elementos .centro */
+        .centro {
+    display: flex;
+    flex-wrap: wrap; /* Permite que los elementos se envuelvan en columnas */
+    justify-content: space-between; /* Distribuye los elementos horizontalmente */
+    align-items: center; /* Centra verticalmente los elementos */
+    height: 50vh; /* Establece la altura del contenedor al 50% de la altura de la ventana */
+    max-width: 600px; /* Ajusta el ancho máximo del contenedor para controlar el espacio entre columnas */
+    margin: 0 auto; /* Centra los elementos horizontalmente */
+}
+
+.boton {
+    width: calc(50% - 10px); /* Establece el ancho de los botones en un 50% con espacio entre ellos */
+    padding: 10px 20px;
+    margin: 5px;
+    background-color: #007BFF;
+    color: #fff;
+    text-decoration: none;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    box-sizing: border-box; /* Evita que el padding afecte el ancho real */
+}
+
+/* Estilo cuando se pasa el ratón por encima del botón */
+.boton:hover {
+    background-color: #0056b3;
+}
+
+button{
+    position: relative;
+    margin: 0;
+    width: 120px;
+    height: 40px;
+    top: 80px;
+    right: 230px;
+    background-color: #0056b3;
+    cursor: pointer;
+}
+
+    </style>
+</head>
+<body>
+    <div class="centro">
+        <a href="trabalenguas1.html" class="boton">Trabalenguas 1</a>
+        <a href="trabalenguas2.html" class="boton">Trabalenguas 2</a>
+        <a href="trabalenguas3.html" class="boton">Trabalenguas 3</a>
+        <a href="trabalengua4.html" class="boton">Trabalenguas 4</a>
+        <a href="trabalenguas5.html" class="boton">Trabalenguas 5</a>
+        <a href="index.html"><button>Pagina de inicio</button></a>
+    </div>
+</body>
+</html>

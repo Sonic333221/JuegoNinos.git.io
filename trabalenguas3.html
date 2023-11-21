@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trabalenguas</title>
+    <style>
+        /* Estilos generales */
+        body {
+            position: relative;
+            margin: 0;
+            background-image: url("InderBello3.jpeg");
+            background-size: 151%;
+            background-repeat: no-repeat;
+            background-position: right;
+            background-color: yellowgreen;
+            font-family: Arial, sans-serif;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .center {
+            text-align: center;
+        }
+
+        /* Estilos específicos para el dinosaurio */
+        .dinosaurio {
+            width: 200px;
+            height: auto;
+            cursor: pointer;
+            margin-top: 20px;
+            margin-left: 1100px;
+            opacity: 0; 
+        }
+
+        /* Estilos específicos para el trabalenguas */
+        .trabalenguas {
+            text-align: center;
+            margin-top: 20px;
+            font-style: italic;
+            display: none;
+        }
+
+        h3 {
+            color: crimson; /* Cambia "blue" al color que desees */
+            font-family: 'Times New Roman', Times, serif;
+            font-size: 30pt;
+        }
+
+        .button-container {
+            display: flex;
+            justify-content: space-around;
+            margin-top: 20px;
+        }
+
+        button {
+            height: 50px;
+            width: 100px;
+            text-align: center;
+            cursor: pointer;
+            background-color: aqua;
+            border-radius: 10px;
+        }
+
+        .boton1 {
+            height: 40px;
+            width: 120px;
+            background-color: aqua;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div class="button-container">
+        <button id="mostrarTrabalenguas">Haz clic aquí</button>
+        <a href="trabalenguas.html"><button class="boton1">Regresar</button></a>
+    </div>
+
+    <img src="" class="dinosaurio">
+    <h3 id="linea1" class="trabalenguas" style="display: none;">3.Me han dicho un dicho,</h3>
+    <h3 id="linea2" class="trabalenguas" style="display: none;">que dicen que he dicho yo.</h3>
+    <h3 id="linea3" class="trabalenguas" style="display: none;">Ese dicho está mal dicho,</h3>
+    <h3 id="linea4" class="trabalenguas" style="display: none;">pues si yo lo hubiera dicho</h3>
+    <h3 id="linea5" class="trabalenguas" style="display: none;">estaría mejor dicho,</h3>
+    <h3 id="linea6" class="trabalenguas" style="display: none;">que ese dicho que dicen que dije yo.</h3>
+
+    <script>
+        window.addEventListener('DOMContentLoaded', (event) => {
+            const mostrarTrabalenguasBtn = document.getElementById('mostrarTrabalenguas');
+            const lineasTrabalenguas = [
+                document.getElementById('linea1'),
+                document.getElementById('linea2'),
+                document.getElementById('linea3'),
+                document.getElementById('linea4'),
+                document.getElementById('linea5'),
+                document.getElementById('linea6'),
+            ];
+
+            mostrarTrabalenguasBtn.addEventListener('click', () => {
+                lineasTrabalenguas.forEach(linea => {
+                    linea.style.display = 'block';
+                });
+            });
+        });
+    </script>
+</body>
+</html>

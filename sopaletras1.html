@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Sopa de Letras</title>
+
+    <style>
+        body {
+            position: relative;
+            margin: 0;
+            background-image: url("InderBello1.jpeg");
+            background-size: 151%;
+            background-repeat: no-repeat;
+            background-position: right;
+            background-color: yellowgreen;
+            font-family: Arial, sans-serif;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 10px; /* Added margin for spacing */
+        }
+        
+        .container {
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 80vh; /* Adjusted height for better fit */
+            background-color: #f8f8f8;
+            font-family: 'Helvetica Neue', Arial, sans-serif;
+            border: 5px solid #050430;
+            border-radius: 10px;
+            padding: 10px;
+        }
+        
+        h1, h3 {
+            font-size: 24px; /* Reduced font size */
+            margin-bottom: 20px; /* Reduced margin */
+            color: #444;
+            text-align: center;
+        }
+        
+        ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            text-align: center;
+            margin-bottom: 20px; /* Reduced margin */
+        }
+        
+        ul li {
+            position: relative;
+            font-size: 16px; /* Reduced font size */
+            margin-bottom: 5px; /* Reduced margin */
+            color: #666;
+            border: solid;
+        }
+        
+        table {
+            border-collapse: collapse;
+            margin-bottom: 16px; /* Reduced margin */
+            border: 2px solid #050430;
+            width: 400px; /* Reduced width */
+        }
+        
+        th {
+            width: 36px; /* Reduced width */
+            height: 36px; /* Reduced height */
+            text-align: center;
+            border: 2px solid #050430;
+            font-weight: bold;
+            font-size: 16px; /* Reduced font size */
+            color: #050430;
+        }
+        
+        td {
+            width: 36px; /* Reduced width */
+            height: 36px; /* Reduced height */
+            text-align: center;
+            border: 2px solid #bbb;
+            font-size: 16px; /* Reduced font size */
+            color: #444;
+        }
+        
+        ul#wordList {
+            position: absolute;
+            top: 60%;
+            left: 75%;
+            transform: translate(-50%, -50%); /* Centered horizontally and vertically */
+            background-color: #fff;
+            padding: 10px;
+            border-radius: 10px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+            max-width: 200px;
+            overflow-y: auto;
+        }
+        
+        button {
+            background-color: #0056b3;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 14px; /* Reduced font size */
+            transition: background-color 0.3s ease;
+        }
+        
+        .boton1 {
+            position: relative;
+            margin: 0;
+            top: -598px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <h1><i>Juega la sopa de Letras</i></h1>
+    <h3>Palabras a encontrar:</h3>
+    <ul id="wordList">
+        <li id="word1" onclick="selectWord('word1')" class="selected-word1">FUTBOL</li>
+        <li id="word2" onclick="selectWord('word2')" class="selected-word2">BALONCESTO</li>
+        <li id="word3" onclick="selectWord('word3')" class="selected-word3">CICLISMO</li>
+        <li id="word4" onclick="selectWord('word4')" class="selected-word4">BOXEO</li>
+        <li id="word5" onclick="selectWord('word5')" class="selected-word5">TENIS</li>
+        <li id="word6" onclick="selectWord('word6')" class="selected-word6">NATACION</li>
+        <li id="word7" onclick="selectWord('word7')" class="selected-word7">GIMNASIA</li>
+        <li id="word8" onclick="selectWord('word8')" class="selected-word8">ATLETISMO</li>
+    </ul>
+   <center><table border="1" id="wordSearchTable" class="container">
+        <tr>
+            <th class="word-color1">F</th><th class="word-color1">U</th><th class="word-color1">T</th><th class="word-color1">B</th><th class="word-color1">O</th><th class="word-color1">L</th><th>O</th><th class="word-color3">B</th><th>C</th><th class="word-color2">N</th>
+        </tr>
+        <tr>
+            <th class="word-color4">A</th><th>T</th><th class="word-color5">E</th><th class="word-color6">C</th><th>T</th><th>E</th><th class="word-color8">G</th><th class="word-color3">A</th><th>L</th><th class="word-color2">A</th>
+        </tr>
+        <tr>
+            <th class="word-color4">T</th><th>L</th><th class="word-color5">N</th><th class="word-color6">I</th><th>N</th><th class="word-color7">B</th><th class="word-color8">I</th><th class="word-color3">L</th><th>T</th><th class="word-color2">T</th>
+        </tr>
+        <tr>
+            <th class="word-color4">L</th><th>R</th><th class="word-color5">I</th><th class="word-color6">C</th><th>X</th><th class="word-color7">O</th><th class="word-color8">M</th><th class="word-color3">O</th><th>M</th><th class="word-color2">A</th>
+        </tr>
+        <tr>
+            <th class="word-color4">E</th><th>T</th><th class="word-color5">S</th><th class="word-color6">L</th><th>E</th><th class="word-color7">X</th><th class="word-color8">N</th><th class="word-color3">N</th><th>I</th><th class="word-color2">C</th>
+        </tr>
+        <tr>
+            <th class="word-color4">T</th><th>S</th><th>M</th><th class="word-color6">I</th><th>A</th><th class="word-color7">E</th><th class="word-color8">A</th><th class="word-color3">C</th><th>Y</th><th class="word-color2">I</th>
+        </tr>
+        <tr>
+            <th class="word-color4">I</th><th>I</th><th>M</th><th class="word-color6">S</th><th>U</th><th class="word-color7">O</th><th class="word-color8">S</th><th class="word-color3">E</th><th>G</th><th class="word-color2">O</th>
+        </tr>
+        <tr>
+            <th class="word-color4">S</th><th>L</th><th>U</th><th class="word-color6">M</th><th>M</th><th>E</th><th class="word-color8">I</th><th class="word-color3">S</th><th>L</th><th class="word-color2">N</th>
+        </tr>
+        <tr>
+            <th class="word-color4">M</th><th>L</th><th>U</th><th class="word-color6">O</th><th>M</th><th>E</th><th class="word-color8">A</th><th class="word-color3">T</th><th>L</th><th>T</th>
+        </tr>
+        <tr>
+            <th class="word-color4">O</th><th>L</th><th>U</th><th>G</th><th>M</th><th>E</th><th>S</th><th class="word-color3">O</th><th>L</th><th>T</th>
+        </tr>
+    </table></center>
+
+    <a href="sopaletras.html"><button class="boton1">Regresar</button></a>
+    
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            const wordList = document.getElementById("wordList");
+            const words = wordList.getElementsByTagName("li");
+            const table = document.getElementById("wordSearchTable");
+            const cells = table.getElementsByTagName("th");
+            let foundWords = 0;
+        
+            for (const word of words) {
+                word.addEventListener("click", function() {
+                    if (!word.classList.contains("found")) {
+                        word.classList.add("found");
+                        foundWords++;
+                        if (foundWords === words.length) {
+                            alert("Felicitaciones lo hicistes super bien");
+                        }
+                    }
+                });
+            }
+        
+            function selectWord(wordId) {
+                const letters = wordMappings[wordId];
+        
+                if (letters) {
+                    for (const letter of letters) {
+                        const cell = findCellWithLetter(letter);
+                        if (cell) {
+                            cell.classList.add("selected-letter");
+                            highlightColumn(cell.cellIndex);
+                        }
+                    }
+        
+                    // Marcar la palabra como encontrada en la lista de palabras
+                    const wordElement = document.getElementById(wordId);
+                    wordElement.classList.add("found");
+                    foundWords++;
+        
+                    if (foundWords === words.length) {
+                        alert("Felicitaciones lo hicistes super bien");
+                    }
+                }
+            }
+        
+            function highlightColumn(columnIndex) {
+                const tableRows = table.getElementsByTagName("tr");
+                for (const row of tableRows) {
+                    const cell = row.cells[columnIndex];
+                    cell.classList.add("highlight-column");
+                }
+            }
+        
+            function findCellWithLetter(letter) {
+                // Encuentra y devuelve la celda que contiene la letra en la tabla de la sopa de letras
+                const tableCells = table.getElementsByTagName("th");
+                for (const cell of tableCells) {
+                    if (cell.innerHTML === letter) {
+                        return cell;
+                    }
+                }
+                return null;
+            }
+        
+            function selectWord(wordId) {
+                const letters = wordMappings[wordId];
+            
+                if (letters) {
+                    // Generar un color de borde aleatorio
+                    const randomBorderColor = getRandomColor();
+            
+                    for (const letter of letters) {
+                        const cell = findCellWithLetter(letter);
+                        if (cell) {
+                            // Aplicar el color de borde aleatorio
+                            cell.style.borderColor = randomBorderColor;
+                            cell.classList.add("selected-letter");
+                            highlightColumn(cell.cellIndex);
+                        }
+                    }
+            
+                    // Marcar la palabra como encontrada en la lista de palabras
+                    const wordElement = document.getElementById(wordId);
+                    wordElement.classList.add("found");
+                    foundWords++;
+            
+                    if (foundWords === words.length) {
+                        alert("Felicitaciones lo hicistes super bien");
+                    }
+                }
+            }
+            
+            // Función para generar un color de borde aleatorio en formato hexadecimal
+            // Función para generar un color aleatorio en formato hexadecimal
+        // Agrega un evento de clic a cada columna
+        // Función para generar un color aleatorio en formato hexadecimal
+        const wordColors = {
+            'word-color1': '#FF5733',
+            'word-color2': '#FFD700',   
+            'word-color3': '#32CD32',    // Color para la tercera palabra
+            'word-color4': '#87CEEB',    // Color para la cuarta palabra
+            'word-color5': '#FFA07A',    // Color para la quinta palabra
+            'word-color6': '#9370DB',    // Color para la sexta palabra
+            'word-color7': '#00FFFF',    // Color para la séptima palabra
+            'word-color8': '#FF4500',    // Color para la octava palabra
+            'word-color9': '#7B68EE',    // Color para la novena palabra
+            'word-color10': '#FF1493' 
+        };
+        
+        // Agrega un evento de clic a cada fila de palabras
+        document.querySelectorAll('th').forEach(function (wordRow) {
+            wordRow.addEventListener('click', function () {
+                // Obtiene la clase de la fila de palabras clicada
+                const wordClass = wordRow.classList[0];
+                
+                // Obtiene el color correspondiente de wordColors
+                const color = wordColors[wordClass];
+                
+                // Cambia el color de fondo de la fila de palabras al color asignado
+                wordRow.style.backgroundColor = color;
+            });
+        });
+        
+            for (const cell of cells) {
+                cell.addEventListener("click", function() {
+                    if (cell.innerHTML !== "") {
+                        if (!cell.classList.contains("selected")) {
+                            cell.classList.add("selected");
+                        } else {
+                            cell.classList.remove("selected");
+                        }
+                    }
+                });
+            }
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Juego de Adivinanzas</title>
+<link rel="stylesheet" href="adivinanzas4.css">
+<style>
+  body {
+    position: relative;
+    margin: 0;
+    background-image: url("InderBello1.jpeg");
+    background-size: 143%; /* Ajusta este valor para cambiar el tamaño de la imagen */
+    background-repeat: no-repeat;
+    background-position: right;
+    background-color: yellowgreen;
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.boton1{
+  position: relative;
+  margin: 0;
+  top: 180px;
+  height: 40px;
+  width: 120px;
+  background-color:cornflowerblue;
+  right: 485px;
+  cursor: pointer;
+}
+</style>
+</head>
+<body>
+<div class="container">
+  <h1>Juego de Adivinanzas</h1>
+  <p id="question">Adivinanza: 
+    Tengo agujas, pero no sé coser,
+    tengo números, pero no sé leer,
+    las horas te doy,
+    ¿sabes quién soy?</p>
+  <input type="text" id="answerInput" placeholder="Tu respuesta">
+  <button id="submitBtn">Responder</button>
+  <p id="result"></p>
+</div>
+<a href="adivinanza.html"><button class="boton1">Regresar</button></a>
+<script src="adivinanzas4.js"></script>
+</body>
+</html>

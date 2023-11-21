@@ -1,0 +1,86 @@
+/* Estilos para el contenedor principal */
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: #f8f8f8; /* Un tono ligeramente más cálido */
+    font-family: 'Helvetica Neue', Arial, sans-serif; /* Mayor legibilidad */
+}
+
+/* Estilos para el título */
+h1 {
+    font-size: 36px; /* Tamaño más grande para mayor impacto */
+    margin-bottom: 30px; /* Un poco más de espacio abajo */
+    color: #444; /* Un tono más suave */
+    text-align: center;
+}
+
+/* Estilos para la lista de palabras */
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+    margin-bottom: 30px; /* Mayor separación */
+}
+
+ul li {
+    font-size: 20px; /* Tamaño ligeramente más grande */
+    margin-bottom: 10px; /* Espaciado más amplio entre elementos */
+    color: #666; /* Un tono más suave */
+}
+
+/* Estilos para la tabla de la sopa de letras */
+table {
+    border-collapse: collapse;
+    margin-bottom: 32px; /* Mayor separación */
+    border: 2px solid #050430;
+    width: 700px;
+}
+
+th {
+    width: 40px; /* Un poco más grande para contenido legible */
+    height: 40px; /* Misma razón que el ancho */
+    text-align: center;
+    border: 2px solid #050430; /* Borde con grosor de 2px */
+    font-weight: bold;
+    font-size: 20px; /* Tamaño ligeramente más grande */
+    color: #050430;
+}
+
+td {
+    width: 40px; /* Un poco más grande para contenido legible */
+    height: 40px; /* Misma razón que el ancho */
+    text-align: center;
+    border: 2px solid #bbb; /* Borde con grosor de 2px */
+    font-size: 20px; /* Tamaño ligeramente más grande */
+    color: #444; /* Un tono más suave */
+}
+
+/* Estilos para las celdas resaltadas */
+.highlight {
+    background-color: #ffefb5; /* Un tono amarillo más suave */
+}
+
+.found {
+    background-color: #ffefb5; /* Un tono amarillo más suave */
+}
+
+.selected {
+    background-color: #c7e4ff; /* Un tono azul más suave */
+}
+
+/* Estilos para el mensaje de felicitaciones */
+.message {
+    font-size: 28px; /* Tamaño ligeramente más grande */
+    color: #444; /* Un tono más suave */
+    text-align: center;
+}
+h3{
+    font-size: 36px; /* Tamaño más grande para mayor impacto */
+    margin-bottom: 30px; /* Un poco más de espacio abajo */
+    color: #444; /* Un tono más suave */
+    text-align: center;
+}
